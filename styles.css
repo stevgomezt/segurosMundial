@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+/* Fondo blanco para menu lateral */
+.css-6qob1r {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: overlay;
+    background: rgb(41,41,41);
+    background: linear-gradient(90deg, rgba(41,41,41,1) 0%, rgba(41,41,41,1) 35%);
+}
+
+/* Inicio boton cargar archivo */
+.css-13ejsyy {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 0.25rem 2.75rem;
+    margin: 0px;
+    line-height: 1.6;
+    user-select: none;
+    background-color: white;
+    color: #0091ff;
+    height: 35px;
+    width: auto;
+    border: solid 1px #0091ff;
+    font-size: 15px;
+    border-radius: 0px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    margin-left: 16px;
+    width: 200px;
+}
+
+.css-13ejsyy:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.css-13ejsyy:focus:not(:active) {
+    border-color: #0091ff;
+    background-color: white;
+    color: #0091ff;
+    /* text-decoration: underline; */
+}
+
+.css-13ejsyy:hover {
+    border-color: #0091ff;
+    background-color: #0091ff;
+    color: white;
+    /* text-decoration: underline; */
+}
+
+.css-13ejsyy:active {
+    border-color: #0091ff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    color: #0091ff;
+    /* text-decoration: underline; */
+}
+/* Fin boton cargar archivo */
+
+/* Inicio boton ejecutar modelo */
+.css-q3uqly {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    padding: 0.25rem 2.75rem;
+    margin: 0px;
+    line-height: 1.6;
+    user-select: none;
+    background-color: white;
+    color: #0091ff;
+    height: 35px;
+    width: auto;
+    border: solid 1px #0091ff;
+    font-size: 15px;
+    border-radius: 0px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 5px;
+    margin-left: 16px;
+    width: 200px;
+}
+
+.css-q3uqly:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.css-q3uqly:focus:not(:active) {
+    border-color: #0091ff;
+    background-color: white;
+    color: #0091ff;
+    /* text-decoration: underline; */
+}
+
+.css-q3uqly:hover {
+    border-color: #0091ff;
+    background-color: #0091ff;
+    color: white;
+    /* text-decoration: underline; */
+}
+
+.css-q3uqly:active {
+    border-color: #0091ff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+    background-color: white;
+    color: #0091ff;
+    /* text-decoration: underline; */
+}
+/* Fin boton ejecutar modelo */
+
+/* Inicio Titulo Modelo Multiples Clientes */
+.st-cf:hover {
+    color: #0091ff;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.css-1fcdlhc .streamlit-expanderHeader:hover svg {
+    fill: #0091ff;
+}
+
+.css-16idsys p {
+    word-break: break-word;
+    margin-bottom: 0px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #0091ff;
+}
+/* Fin Titulo Modelo Multiples Clientes */
+
+/* Inicio Linea que subraya subtitulos de informacion procesada */
+.st-cp {
+    background-color: #0091ff;
+}
+/* Fin Linea que subraya subtitulos de informacion procesada */
+
+.css-taue2i {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    padding: 1rem 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    color: rgb(49, 51, 63);
+}
+
+h3 {
+    font-family: "Roboto", sans-serif !important;
+    font-size: 15px !important;
+    color: #0091ff !important;
+    letter-spacing: -0.005em !important;
+    padding: 0.5rem 0px 1rem !important;
+    margin: 0px !important;
+    line-height: 1.2 !important;
+}
+
+/* Inicio Centrar Logo */
+.css-1kyxreq {
+    display: flex;
+    flex-flow: wrap;
+    row-gap: 1rem;
+    justify-content: center;
+    padding-right: 20px;
+}
+/* Fin Centrar Logo */
+
+/* Inicio Bloquear menu lateral */
+.css-vk3wp9 {
+    position: relative;
+    top: 2px;
+    background-color: rgb(240, 242, 246);
+    z-index: 999991;
+    min-width: 300px;
+    max-width: 300px;
+    transform: none;
+    transition: transform 300ms ease 0s, min-width 300ms ease 0s,
+        max-width 300ms ease 0s;
+}
+/* Fin Bloquear menu lateral */
+
+.st-d1 {
+    overflow-y: hidden;
+    background-color: white;
+}
+.st-dv {
+    padding-top: 1rem;
+    background-color: white;
+}
+
+/* Texto bajo Logo */
+.css-1b0udgb {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    margin-top: 0.375rem;
+    overflow-wrap: break-word;
+    padding: 0.125rem;
+}
