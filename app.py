@@ -848,7 +848,7 @@ def main():
                         # Orden deseado de las categorías
                         'order': ['INSTALACIONES', 'MANTENIMIENTO', 'ESTUDIOS', 'AUMENTOS_CARGA', 'FIBRA_OPTICA', 'REDESELECTRICAS', 'ILUMINACION', 'CUENTASNUEVAS'],
                         # Orden deseado de las categorías']ACIONES','MANTENIMIENTO','ESTUDIOS','AUMENTOS_CARGA','FIBRA_OPTICA','REDESELECTRICAS','ILUMINACION','CUENTASNUEVAS0
-                        'order_f': ['Asegura tus compras', 'AP', 'Cancer', 'Seguros por kilometro', 'Bicicletas', 'Hogar Express', 'Billetera y documentos', 'Viajes']
+                        'order_f': ['Asegura tus compras', 'AP', 'Cáncer', 'Seguros por kilómetro', 'Bicicletas', 'Hogar exprés', 'Billetera y documentos', 'Viajes']
                     }]
 
                 # espacio(0,0,1,9)
@@ -866,8 +866,8 @@ def main():
 
                 dic1 = ['INSTALACIONES', 'MANTENIMIENTO', 'ESTUDIOS', 'AUMENTOS_CARGA',
                         'FIBRA_OPTICA', 'REDESELECTRICAS', 'ILUMINACION', 'CUENTASNUEVAS']
-                dic2 = ['Asegura tus compras', 'AP', 'Cancer',
-                        'Seguro por kilometro', 'Bicicletas', 'Hogar Express', 'Billetera y documentos', 'Viajes']
+                dic2 = ['Asegura tus compras', 'AP', 'Cáncer',
+                        'Seguro por kilometro', 'Bicicletas', 'Hogar exprés', 'Billetera y documentos', 'Viajes']
                 Xf = Xf.replace(dict(zip(dic1, dic2)))
                 download_excel(Xf, 'Resultado', col=col2_container1)
 
@@ -878,7 +878,7 @@ def main():
                 # ######## Mantenimiento
                 # dona('MANTENIMIENTO',0 , 1, 'Mantenimiento')
                 dona_plotly(df_prob_prod=df_prob_prod, producto='MANTENIMIENTO',
-                            titulo='Cancer', col=col2_container2)
+                            titulo='Cáncer', col=col2_container2)
 
                 # ######## Estudios
                 # dona('ESTUDIOS',0 , 2, 'c')
@@ -893,7 +893,7 @@ def main():
                 # #FIBRA OPTICA
                 # dona('FIBRA_OPTICA',1 , 0, 'Fibras ópticas')
                 dona_plotly(df_prob_prod=df_prob_prod, producto='FIBRA_OPTICA',
-                            titulo='Seguros por kilometro', col=col1_container2)
+                            titulo='Seguros por kilómetro', col=col1_container2)
 
                 # #REDESELECTRICAS
                 # dona('REDESELECTRICAS',1 , 1, 'Redes eléctricas')
@@ -908,7 +908,7 @@ def main():
                 # #CUENTASNUEVAS
                 # dona('CUENTASNUEVAS',1 , 3, 'Cuentas nuevas')
                 dona_plotly(df_prob_prod=df_prob_prod, producto='CUENTASNUEVAS',
-                            titulo='Hogar Express', col=col2_container2)
+                            titulo='Hogar exprés', col=col2_container2)
 
             except UnboundLocalError:
                 st.warning(
@@ -943,7 +943,7 @@ def main():
                             'col': col2,
                             # Orden deseado de las categorías
                             'order': ['SINCATALOGAR', 'NOCOMPRADOR', 'PEQUENOCOMPRADOR', 'MEDIANOCOMPRADOR', 'GRANCOMPRADOR', 'COMPRADORMEGAPROYECTOS'],
-                            'order_f': ['AP', 'AP', 'Asegura tus compras', 'Cancer', 'Hogar Express', 'Billetera y documentos', 'No comprador']
+                            'order_f': ['AP', 'AP', 'Asegura tus compras', 'Cáncer', 'Hogar exprés', 'Billetera y documentos', 'No comprador']
                         }]
                     generar_graficos(df_t, configuraciones, color=1)
 
@@ -958,7 +958,7 @@ def main():
                             'col': col2,
                             # Orden deseado de las categorías
                             'order': ['SINCATALOGAR', 'NOCOMPRADOR', 'UNICACOMPRA', 'BAJARECURRENCIA', 'RECURRENCIAMEDIA', 'GRANRECURRENCIA'],
-                            'order_f': ['Sin catalogar', 'AP', 'Asegura tus compras', 'Hogar Express', 'Bicicletas', 'Billetera y documentos']
+                            'order_f': ['Sin catalogar', 'AP', 'Asegura tus compras', 'Hogar exprés', 'Bicicletas', 'Billetera y documentos']
                             # 'order_f':['Sin catalogar', 'No comprador','Unica compra','Baja recurrencia','Recurrencia media','Gran recurrencia']
                         }]
                     generar_graficos(df_t, configuraciones, color=2)
