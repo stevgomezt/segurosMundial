@@ -848,7 +848,7 @@ def main():
                         # Orden deseado de las categorías
                         'order': ['INSTALACIONES', 'MANTENIMIENTO', 'ESTUDIOS', 'AUMENTOS_CARGA', 'FIBRA_OPTICA', 'REDESELECTRICAS', 'ILUMINACION', 'CUENTASNUEVAS'],
                         # Orden deseado de las categorías']ACIONES','MANTENIMIENTO','ESTUDIOS','AUMENTOS_CARGA','FIBRA_OPTICA','REDESELECTRICAS','ILUMINACION','CUENTASNUEVAS0
-                        'order_f': ['Asegura tus compras', 'AP', 'Cáncer', 'Seguros por kilómetro', 'Bicicletas', 'Hogar exprés', 'Billetera y documentos', 'Viajes']
+                        'order_f': ['Disfruta Tranquilo', 'Vida', 'Desempleo', 'Responsabilidad Civil Familiar', 'AP Segurísimo', 'Cyber Esencial', 'SOAT', 'Arriendos']
                     }]
 
                 # espacio(0,0,1,9)
@@ -864,51 +864,51 @@ def main():
                                 'Valor_probabilidad5',	'Producto_6',	'Probabilidad_6',	'Valor_probabilidad6',	'Producto_7',
                                 'Probabilidad_7',	'Valor_probabilidad7',	'Producto_8',	'Probabilidad_8',	'Valor_probabilidad8']]
 
-                dic1 = ['INSTALACIONES', 'MANTENIMIENTO', 'ESTUDIOS', 'AUMENTOS_CARGA',
-                        'FIBRA_OPTICA', 'REDESELECTRICAS', 'ILUMINACION', 'CUENTASNUEVAS']
-                dic2 = ['Asegura tus compras', 'AP', 'Cáncer',
-                        'Seguro por kilometro', 'Bicicletas', 'Hogar exprés', 'Billetera y documentos', 'Viajes']
+                dic1 = ['INSTALACIONES', 'MANTENIMIENTO', 'ESTUDIOS', 'AUMENTOS_CARGA', 'FIBRA_OPTICA', 'REDESELECTRICAS', 'ILUMINACION', 'CUENTASNUEVAS']
+                dic2 = ['Disfruta Tranquilo', 'Vida', 'Desempleo', 'Responsabilidad Civil Familiar', 'AP Segurísimo', 'Cyber Esencial', 'SOAT', 'Arriendos']
                 Xf = Xf.replace(dict(zip(dic1, dic2)))
                 download_excel(Xf, 'Resultado', col=col2_container1)
 
                 # INSTALACIONES
                 dona_plotly(df_prob_prod=df_prob_prod, producto='INSTALACIONES',
-                            titulo='Asegura tus compras', col=col1_container2)
-
-                # ######## Mantenimiento
-                # dona('MANTENIMIENTO',0 , 1, 'Mantenimiento')
-                dona_plotly(df_prob_prod=df_prob_prod, producto='MANTENIMIENTO',
-                            titulo='Cáncer', col=col2_container2)
+                            titulo='Disfruta Tranquilo', col=col1_container2)
 
                 # ######## Estudios
                 # dona('ESTUDIOS',0 , 2, 'c')
                 dona_plotly(df_prob_prod=df_prob_prod, producto='ESTUDIOS',
-                            titulo='AP', col=col1_container2)
-
-                # #AUMENTOS_CARGA
-                # dona('AUMENTOS_CARGA',0 , 3, 'Aumentos de carga')
-                dona_plotly(df_prob_prod=df_prob_prod, producto='AUMENTOS_CARGA',
-                            titulo='Bicicletas', col=col2_container2)
+                            titulo='Vida', col=col1_container2)
+                
+                # ######## Mantenimiento
+                # dona('MANTENIMIENTO',0 , 1, 'Mantenimiento')
+                dona_plotly(df_prob_prod=df_prob_prod, producto='MANTENIMIENTO',
+                            titulo='Desempleo', col=col2_container2)
 
                 # #FIBRA OPTICA
                 # dona('FIBRA_OPTICA',1 , 0, 'Fibras ópticas')
                 dona_plotly(df_prob_prod=df_prob_prod, producto='FIBRA_OPTICA',
-                            titulo='Seguros por kilómetro', col=col1_container2)
+                            titulo='Responsabilidad Civil Familiar', col=col1_container2)
 
-                # #REDESELECTRICAS
-                # dona('REDESELECTRICAS',1 , 1, 'Redes eléctricas')
-                dona_plotly(df_prob_prod=df_prob_prod, producto='REDESELECTRICAS',
-                            titulo='Viajes', col=col2_container2)
-
-                # #ILUMINACION
-                # dona('ILUMINACION',1 , 2, 'Iluminación')
-                dona_plotly(df_prob_prod=df_prob_prod, producto='ILUMINACION',
-                            titulo='Billetera y documentos', col=col1_container2)
+                # #AUMENTOS_CARGA
+                # dona('AUMENTOS_CARGA',0 , 3, 'Aumentos de carga')
+                dona_plotly(df_prob_prod=df_prob_prod, producto='AUMENTOS_CARGA',
+                            titulo='AP Segurísimo', col=col2_container2)
 
                 # #CUENTASNUEVAS
                 # dona('CUENTASNUEVAS',1 , 3, 'Cuentas nuevas')
                 dona_plotly(df_prob_prod=df_prob_prod, producto='CUENTASNUEVAS',
-                            titulo='Hogar exprés', col=col2_container2)
+                            titulo='Cyber Esencial', col=col2_container2)
+
+                # #ILUMINACION
+                # dona('ILUMINACION',1 , 2, 'Iluminación')
+                dona_plotly(df_prob_prod=df_prob_prod, producto='ILUMINACION',
+                            titulo='SOAT', col=col1_container2)
+                
+                # #REDESELECTRICAS
+                # dona('REDESELECTRICAS',1 , 1, 'Redes eléctricas')
+                dona_plotly(df_prob_prod=df_prob_prod, producto='REDESELECTRICAS',
+                            titulo='Arriendos', col=col2_container2)
+
+
 
             except UnboundLocalError:
                 st.warning(
@@ -943,7 +943,7 @@ def main():
                             'col': col2,
                             # Orden deseado de las categorías
                             'order': ['SINCATALOGAR', 'NOCOMPRADOR', 'PEQUENOCOMPRADOR', 'MEDIANOCOMPRADOR', 'GRANCOMPRADOR', 'COMPRADORMEGAPROYECTOS'],
-                            'order_f': ['AP', 'AP', 'Asegura tus compras', 'Cáncer', 'Hogar exprés', 'Billetera y documentos', 'No comprador']
+                            'order_f': ['Vida', 'Disfruta Tranquilo', 'Desempleo', 'Cyber Esencial', 'SOAT', 'No comprador']
                         }]
                     generar_graficos(df_t, configuraciones, color=1)
 
@@ -958,7 +958,7 @@ def main():
                             'col': col2,
                             # Orden deseado de las categorías
                             'order': ['SINCATALOGAR', 'NOCOMPRADOR', 'UNICACOMPRA', 'BAJARECURRENCIA', 'RECURRENCIAMEDIA', 'GRANRECURRENCIA'],
-                            'order_f': ['Sin catalogar', 'AP', 'Asegura tus compras', 'Hogar exprés', 'Bicicletas', 'Billetera y documentos']
+                            'order_f': ['Sin catalogar', 'Vida', 'Disfruta Tranquilo', 'Cyber Esencial', 'AP Segurísimo', 'SOAT']
                             # 'order_f':['Sin catalogar', 'No comprador','Unica compra','Baja recurrencia','Recurrencia media','Gran recurrencia']
                         }]
                     generar_graficos(df_t, configuraciones, color=2)
@@ -971,8 +971,7 @@ def main():
                             'x_axis_title': 'Cantidad de clientes',
                             'y_axis': 'Tipo de cliente por numero de oportunidades',
                             'col': col2,
-                            'order': ['SINCATALOGAR', 'NICOMPRA-NICOTIZA', 'SOLOCOTIZAN', 'COTIZANMASDELOQUECOMPRAN',
-                                      'COMPRANYCOTIZAN', 'COMPRANMASDELOQUECOTIZAN', 'SIEMPRECOMPRAN'],  # Orden deseado de las categorías
+                            'order': ['SINCATALOGAR', 'NICOMPRA-NICOTIZA', 'SOLOCOTIZAN', 'COTIZANMASDELOQUECOMPRAN','COMPRANYCOTIZAN', 'COMPRANMASDELOQUECOTIZAN', 'SIEMPRECOMPRAN'],  # Orden deseado de las categorías
                             'order_f': ['Sin catalogar', 'Entre 31 y 60 días', 'Entre 61 y 90 días', 'Entre 91 y 120 días',
                                         'Entre 121 y 150 días', 'Entre a 151 y 180 días', 'Mayores a 180 días'],
                         }]
